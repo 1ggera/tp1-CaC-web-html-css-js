@@ -15,15 +15,19 @@ footer {
     height: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+
 }
 
 .footer-link-list {
-    list-style: none;
-    height: 60%;
     width: 40%;
+    height: 100%;
+    list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
 }
+
+.footer-map-google {}
