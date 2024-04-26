@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: #131313;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2B2B2B;
+    width: 100%;
+    padding: 10px 0px;
+    top: 0;
+    position: fixed;
+}
+
+.nav-logo-image {
+    width: 30%;
+}
+
+.nav-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+    font-size: 1.3rem;
+}
+
+.nav-menu-item>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu-separator {
+    margin-top: 3rem;
+    width: 100%;
+    height: 1px;
+}
+
+/* EFECTO HOVER SOBRE MENU */
+
+.nav-menu-list .nav-menu-item {
+    position: relative;
+}
+
+.nav-menu-list .nav-menu-item a {
+    position: relative;
+}
+
+.nav-menu-list .nav-menu-item a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.5s ease;
+    transform: translateX(-50%);
+    background-color: #1561F0;
+}
+
+.nav-menu-list .nav-menu-item a:hover::before {
+    width: 100%;
+    /* Expandir el subrayado al 100% del ancho del elemento padre al pasar el cursor sobre el enlace */
+}
