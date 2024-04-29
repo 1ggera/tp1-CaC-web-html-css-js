@@ -1,50 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- NAVBAR / MENU DE PÁGINA -->
-    <nav class="nav-menu">
-      <div nav-logo-image>
-        <img alt="nav-logo-image" src="#" class="" />
-      </div>
 
-      <ul class="nav-menu-list">
-        <li class="nav-menu-item"><a href="../index.html">Inicio</a></li>
-        <li class="nav-menu-item"><a href="./services.html">Servicios</a></li>
-        <li class="nav-menu-item"><a href="./about.html">Sobre nosotros</a></li>
-        <li class="nav-menu-item"><a href="#">Contáctanos</a></li>
-      </ul>
-    </nav>
-    <div class="nav-menu-separator"></div>
-    <!-- CONTENIDO DE PÁGINA -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/contact.css">
+  <title>Document</title>
+</head>
 
-    <!-- FOOTER / PIE DE PÁGINA-->
-    <footer class="footer-page">
-      <ul class="footer-link-list">
-        <li><a href="#">¿Donde nos ubicamos?</a></li>
-        <!-- Acá ver si le hacemos un link a una dirección random de Google-->
-        <li><a href="#">WhatsApp (+54 911 3934 1696)</a></li>
-        <li><a href="#">Políticas de Garantía</a></li>
-        <li><a href="#">¿Cómo comprar?</a></li>
-        <li><a href="#">Preguntas frecuentes</a></li>
-      </ul>
-      <div class="footer-map">
-        <iframe
-          class=""
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167135736388!2d-58.3841453235642!3d-34.60373887295444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1713559634734!5m2!1ses!2sar"
-          width="100%"
-          height="100%"
-          allowfullscreen=""
-          title="map-ubication"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+<body>
+  <!-- NAVBAR / MENU DE PÁGINA -->
+  <nav class="nav-menu">
+    <div nav-logo-image>
+      <img alt="nav-logo-image" src="#" class="" />
+    </div>
+
+    <ul class="nav-menu-list">
+      <li class="nav-menu-item"><a href="../index.html">Inicio</a></li>
+      <li class="nav-menu-item"><a href="./services.html">Servicios</a></li>
+      <li class="nav-menu-item"><a href="./about.html">Sobre nosotros</a></li>
+      <li class="nav-menu-item"><a href="#">Contáctanos</a></li>
+    </ul>
+  </nav>
+  <div class="nav-menu-separator"></div>
+  <!-- CONTENIDO DE PÁGINA -->
+
+  <div class="container">
+    <h1 class="brand"><span>Proyecto</span> Web</h1>
+    <div class="wrapper">
+      <div class="title-contact">
+        <h3>Proyecto Web</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> calle falsa 123</li>
+          <li><i class="fa fa-phone"></i> 555-5555</li>
+          <li><i class="fa fa-envelope"></i> xxx@xxxxxx.xxx</li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="contact">
+        <h3>Contactanos</h3>
+        <form id="contactForm">
+          <p>
+            <label>Nombre</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Apellido</label>
+            <input type="text" name="subname" id="subname">
+          </p>
+          <p>
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+
+          </p>
+          <p>
+            <label>Numero de telefono</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+
+          <p>
+
+            <label>Servicios</label>
+            <select>
+              <option value="repair">Reparacion</option>
+              <option value="armado">Armado de PC</option>
+              <option value="jventas">Ventas</option>
+            </select>
+
+          </p>
+
+          <p class="full">
+            <label>Mensaje</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER / PIE DE PÁGINA-->
+  <footer class="footer-page">
+    <ul class="footer-link-list">
+      <li><a href="#">¿Donde nos ubicamos?</a></li>
+      <!-- Acá ver si le hacemos un link a una dirección random de Google-->
+      <li><a href="#">WhatsApp (+54 911 3934 1696)</a></li>
+      <li><a href="#">Políticas de Garantía</a></li>
+      <li><a href="#">¿Cómo comprar?</a></li>
+      <li><a href="#">Preguntas frecuentes</a></li>
+    </ul>
+    <div class="footer-map">
+      <iframe class=""
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167135736388!2d-58.3841453235642!3d-34.60373887295444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1713559634734!5m2!1ses!2sar"
+        width="100%" height="100%" allowfullscreen="" title="map-ubication"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+</body>
+
 </html>
