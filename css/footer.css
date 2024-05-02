@@ -43,3 +43,30 @@ body {
 .footer-map {
     width: 40%;
 }
+
+/** SECCIÓN RESPONSIVE  **/
+
+
+@media only screen and (max-width: 768px) {
+
+    /* Estilos para pantallas más grandes que 768px */
+    .footer-page {
+        flex-direction: column; /* Cambiamos a fila en pantallas grandes */
+        justify-content: center; /* Ajustamos el espaciado entre elementos */
+        align-items: center;
+        margin: 20px auto;
+        gap: 20px;
+
+    }
+
+    .footer-link-list {
+        flex-direction: column; /* Cambiamos a columna para mostrar en vertical */
+        width: 80%;
+        text-align: center;
+        gap: 10px
+    }
+
+    .footer-map{
+        width: 80%;
+    }
+}

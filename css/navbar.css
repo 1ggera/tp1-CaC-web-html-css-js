@@ -67,5 +67,54 @@ body {
 
 .nav-menu-list .nav-menu-item a:hover::before {
     width: 100%;
-    /* Expandir el subrayado al 100% del ancho del elemento padre al pasar el cursor sobre el enlace */
+}
+
+/** SECCIÓN RESPONSIVE **/
+
+.nav-menu-toggle {
+    display: none; /* Ocultamos el botón de menú por defecto */
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+/* Consulta de medios para hacer el menú responsive */
+@media only screen and (max-width: 768px) {
+    .nav-logo-image{
+        display: none;
+    }
+    .nav-menu {
+        flex-direction: column; /* Cambiamos a columna */
+        align-items: center; /* Centramos los elementos */
+    }
+
+    .nav-menu-list {
+        display: none; /* Ocultamos la lista en pantallas pequeñas */
+    }
+
+    /* Mostrar el botón de menú en pantallas pequeñas */
+    .nav-menu-toggle {
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Estilo de la lista desplegable */
+    .nav-menu-dropdown {
+        display: none; /* Inicialmente oculto */
+        position: absolute;
+        top: 100%; /* Aparece debajo del botón de menú */
+        left: 0;
+        background-color: #2B2B2B;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Mostrar la lista desplegable cuando se hace clic en el botón de menú */
+    .nav-menu-toggle:focus + .nav-menu-dropdown {
+        display: block;
+    }
 }
