@@ -3,12 +3,8 @@
     padding: 0;
 }
 
-body {
-    color: white;
-    background-color: #131313;
-}
-
 .nav-menu {
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -17,6 +13,7 @@ body {
     padding: 10px 0px;
     top: 0;
     position: fixed;
+    color: #fff;
 }
 
 .nav-logo-image {
@@ -38,7 +35,7 @@ body {
 }
 
 .nav-menu-separator {
-    margin-top: 3rem;
+    margin-top: 2rem;
     width: 100%;
     height: 1px;
 }

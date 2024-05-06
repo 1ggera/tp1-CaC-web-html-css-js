@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <title>Document</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>TecniFull</title>
+</head>
+
+<body>
+  <header class="header">
     <!-- NAVBAR / MENU DE PÁGINA -->
     <nav class="nav-menu">
       <div class="nav-logo-image">
         <img alt="nav-logo-image" src="#" class="" />
-      </div> 
+      </div>
       <label for="nav-toggle" class="nav-menu-toggle">&#9776;</label>
 
-      
       <ul class="nav-menu-list">
         <li class="nav-menu-item"><a href="#">Inicio</a></li>
         <li class="nav-menu-item">
@@ -29,32 +36,97 @@
         </li>
       </ul>
 
-      
-    </nav>
-    <div class="nav-menu-separator"></div>
-    <!-- CONTENIDO DE PÁGINA -->
 
-    <!-- FOOTER / PIE DE PÁGINA-->
-    <footer class="footer-page">
-      <ul class="footer-link-list">
-        <li><a href="#">¿Donde nos ubicamos?</a></li>
-        <!-- Acá ver si le hacemos un link a una dirección random de Google-->
-        <li><a href="#">WhatsApp (+54 911 3934 1696)</a></li>
-        <li><a href="#">Políticas de Garantía</a></li>
-        <li><a href="#">¿Cómo comprar?</a></li>
-        <li><a href="#">Preguntas frecuentes</a></li>
-      </ul>
-      <div class="footer-map">
-        <iframe
-          class=""
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167135736388!2d-58.3841453235642!3d-34.60373887295444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1713559634734!5m2!1ses!2sar"
-          width="100%"
-          height="100%"
-          allowfullscreen=""
-          title="map-ubication"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+    </nav>
+    <div class="container">
+      <div class="texto-home">
+        <h1>Armá hoy tu set gamer</h1>
+        <br>
+        <h2>Hasta 20% OFF en monitores y memorias</h3>
+        <br>
+        <ul style="list-style:none;">
+          <li>Todos los medios de pago</li>
+          <li>Comprando 3 productos envío gratis</li>
+          <li>Atención personalizada</li>
+        </ul>
+        <br>
+        <button>Obtener oferta</button>
       </div>
-    </footer>
-  </body>
+      <img class="img-home" src="./images/setgamer.jpg" alt="img-mem-ram">
+    </div>
+  </header>
+  <div class="nav-menu-separator"></div>
+  <!-- CONTENIDO DE PÁGINA -->
+  
+  <div class="titulo-promos">
+    <h1>Elegí tu combo perfecto</h1>
+  </div>
+  <div class="promociones">
+    <br><br>
+    <article class="card">
+      <div class='img-card'>
+          <img src="images/setgamer2.jpg" alt="img-set1" />
+      </div>
+      <div class='texto-card'>
+          <h2>Combo Full HD</h2>
+          <br>
+          <p>
+              2 Monitores 24' + Stream Deck + teclado mecánico y mouse
+          </p>
+          <br>
+      </div>
+      <div class="button-oferta">
+          <a href="#">Aprovechar oferta</a>
+      </div>
+  </article>
+  <article class="card">
+      <div class='img-card'>
+          <img src="images/auri_monit_tec.jpg" alt="img-set2" />
+      </div>
+      <div class='texto-card'>
+          <h2>Combo Music Pro</h2>
+          <br>
+          <p>
+              Monitor 29' + Auriculares Boost Pionner + teclado mecánico y mouse
+          </p>
+      </div>     
+      <div class="button-oferta">
+          <a href="#">Aprovechar oferta</a>
+      </div>
+  </article>
+  <article class="card">
+      <div class='img-card'>
+          <img src="images/joys_aur_sil.jpg" alt="img-set3" />
+      </div>
+      <div class='texto-card'>
+          <h2>Combo Gamer Fan</h2>
+          <br>
+          <p>
+              Sillón Gamer Tunning + Joystick + Auriculares + Teclado y mouse
+          </p>
+      </div>
+      <div class="button-oferta">
+          <a href="#">Aprovechar oferta</a>
+      </div>
+  </article>
+  </div>
+  <!-- FOOTER / PIE DE PÁGINA-->
+  <footer class="footer-page">
+    <ul class="footer-link-list">
+      <li><a href="#">¿Donde nos ubicamos?</a></li>
+      <!-- Acá ver si le hacemos un link a una dirección random de Google-->
+      <li><a href="#">WhatsApp (+54 911 3934 1696)</a></li>
+      <li><a href="#">Políticas de Garantía</a></li>
+      <li><a href="#">¿Cómo comprar?</a></li>
+      <li><a href="#">Preguntas frecuentes</a></li>
+    </ul>
+    <div class="footer-map">
+      <iframe class=""
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167135736388!2d-58.3841453235642!3d-34.60373887295444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1713559634734!5m2!1ses!2sar"
+        width="100%" height="100%" allowfullscreen="" title="map-ubication"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+</body>
+
 </html>
