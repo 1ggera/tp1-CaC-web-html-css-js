@@ -27,6 +27,7 @@
     list-style: none;
     width: 50%;
     font-size: 1.3rem;
+    gap: 0.3rem;
 }
 
 .nav-menu-item>a {
@@ -59,7 +60,7 @@
     height: 2px;
     transition: width 0.5s ease;
     transform: translateX(-50%);
-    background-color: #1561F0;
+    background-color: darkcyan;
 }
 
 .nav-menu-list .nav-menu-item a:hover::before {
