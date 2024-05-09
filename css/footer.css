@@ -13,10 +13,12 @@ body {
     background-color: #2B2B2B;
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
+    height: 250px;
     justify-content: space-around;
     padding: 20px 10%;
     width: 100%;
+    background-image: linear-gradient(to bottom, #050a0e, rgba(8, 126, 250, 0.251));
 }
 
 /* LINKS FOOTER */
