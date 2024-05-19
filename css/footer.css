@@ -13,10 +13,10 @@ body {
     background-color: #2B2B2B;
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     height: 250px;
     justify-content: space-around;
-    padding: 20px 10%;
+    padding: 20px 0%;
     width: 100%;
     background-image: linear-gradient(to bottom, #050a0e, rgba(8, 126, 250, 0.251));
 }
@@ -53,22 +53,25 @@ body {
 
     /* Estilos para pantallas más grandes que 768px */
     .footer-page {
-        flex-direction: column; /* Cambiamos a fila en pantallas grandes */
-        justify-content: center; /* Ajustamos el espaciado entre elementos */
+        flex-direction: column;
+        /* Cambiamos a fila en pantallas grandes */
+        justify-content: center;
+        /* Ajustamos el espaciado entre elementos */
         align-items: center;
         margin: 20px auto;
         gap: 20px;
-
+        padding: 10% 0px;
     }
 
     .footer-link-list {
-        flex-direction: column; /* Cambiamos a columna para mostrar en vertical */
+        flex-direction: column;
+        /* Cambiamos a columna para mostrar en vertical */
         width: 80%;
         text-align: center;
         gap: 10px
     }
 
-    .footer-map{
+    .footer-map {
         width: 80%;
     }
 }

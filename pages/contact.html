@@ -13,17 +13,25 @@
 <body>
   <!-- NAVBAR / MENU DE PÁGINA -->
   <nav class="nav-menu">
-    <div class="nav-logo-image">
-      <img alt="nav-logo-image" src="#" class="">
-    </div>
-
+    <figure>
+      <a href="https://tecnifull.zeabur.app/">
+        <img class="logo" src="../images/logo-no-background.png" alt="Icon"
+          aria-label="tecnifull-logo"><!--style="height: 45px;" -->
+      </a>
+    </figure>
+    <button class="nav-toggle">☰</button>
     <ul class="nav-menu-list">
       <li class="nav-menu-item"><a href="../index.html">Inicio</a></li>
-      <li class="nav-menu-item"><a href="./services.html">Servicios</a></li>
-      <li class="nav-menu-item"><a href="./about.html">Sobre nosotros</a></li>
+      <li class="nav-menu-item"><a href="../pages/services.html">Servicios</a></li>
+      <li class="nav-menu-item"><a href="../pages/about.html">Sobre nosotros</a></li>
       <li class="nav-menu-item"><a href="#">Contáctanos</a></li>
     </ul>
   </nav>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-menu-list').classList.toggle('show');
+    });
+  </script>
   <div class="nav-menu-separator"></div>
   <!-- CONTENIDO DE PÁGINA -->
 

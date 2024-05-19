@@ -22,42 +22,40 @@
     <nav class="nav-menu">
       <figure>
         <a href="https://tecnifull.zeabur.app/">
-          <img class="logo" src="images/logo-no-background.png" alt="Icon" aria-label="tecnifull-logo"><!--style="height: 45px;" -->
+          <img class="logo" src="images/logo-no-background.png" alt="Icon"
+            aria-label="tecnifull-logo"><!--style="height: 45px;" -->
         </a>
-      </figure>        
-      
-      <label for="newMenu">
-        <ul class="nav-menu-list">
-          <li class="nav-menu-item"><a href="https://tecnifull.zeabur.app/">Inicio</a></li>
-          <li class="nav-menu-item">
-            <a href="./pages/services.html">Servicios</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="./pages/about.html">Sobre nosotros</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="./pages/contact.html">Contáctanos</a>
-          </li>
-        </ul>
-      </label>   
+      </figure>
+      <button class="nav-toggle">☰</button>
+      <ul class="nav-menu-list">
+        <li class="nav-menu-item"><a href="#">Inicio</a></li>
+        <li class="nav-menu-item"><a href="./pages/services.html">Servicios</a></li>
+        <li class="nav-menu-item"><a href="./pages/about.html">Sobre nosotros</a></li>
+        <li class="nav-menu-item"><a href="./pages/contact.html">Contáctanos</a></li>
+      </ul>
     </nav>
+    <script>
+      document.querySelector('.nav-toggle').addEventListener('click', function () {
+        document.querySelector('.nav-menu-list').classList.toggle('show');
+      });
+    </script>
     <div class="container">
       <div class="texto-home">
         <h1>Armá hoy tu set gamer</h1>
         <br>
-        <h2>Hasta 20% OFF en monitores y memorias</h3>
-          <br>
-          <ul>
-            <li>Todos los medios de pago</li>
-            <li>Comprando 3 productos envío gratis</li>
-            <li>Atención personalizada</li>
-          </ul>
-          <br>
-          <button>Obtener oferta</button>
+        <h2>Hasta 20% OFF en monitores y memorias</h2>
+        <br>
+        <ul>
+          <li>Todos los medios de pago</li>
+          <li>Comprando 3 productos envío gratis</li>
+          <li>Atención personalizada</li>
+        </ul>
+        <br>
+        <button>Obtener oferta</button>
       </div>
       <div class="img-container">
         <img class="img-home" src="./images/setgamer.jpg" alt="img-mem-ram">
-      </div>      
+      </div>
     </div>
   </header>
   <div class="nav-menu-separator"></div>
@@ -70,10 +68,10 @@
     <section class="promociones">
       <br><br>
       <article class="card">
-        <div class='img-card'>
+        <div class="img-card">
           <img src="images/setgamer2.jpg" alt="img-set1" />
         </div>
-        <div class='texto-card'>
+        <div class="texto-card">
           <h2>Combo Full HD</h2>
           <br>
           <p>
@@ -86,10 +84,10 @@
         </div>
       </article>
       <article class="card">
-        <div class='img-card'>
+        <div class="img-card">
           <img src="images/auri_monit_tec.jpg" alt="img-set2" />
         </div>
-        <div class='texto-card'>
+        <div class="texto-card">
           <h2>Combo Music Pro</h2>
           <br>
           <p>
@@ -101,10 +99,10 @@
         </div>
       </article>
       <article class="card">
-        <div class='img-card'>
+        <div class="img-card">
           <img src="images/joys_aur_sil.jpg" alt="img-set3" />
         </div>
-        <div class='texto-card'>
+        <div class="texto-card">
           <h2>Combo Gamer Fan</h2>
           <br>
           <p>
@@ -167,7 +165,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -183,7 +181,7 @@
         <picture>
           <img src="/images/setgamer2.jpg" alt="memorias ram">
         </picture>
-        
+
 
         <div class="detalle">
           <p>
@@ -192,7 +190,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -216,7 +214,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -240,7 +238,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -264,7 +262,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -288,7 +286,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -312,7 +310,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -336,7 +334,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -360,7 +358,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -384,7 +382,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -408,7 +406,7 @@
           </p>
           <p>$45000</p>
         </div>
-        
+
         <div class="boton-agregar-producto">
           <p class="star">
             <strong>&star;</strong>
@@ -463,5 +461,6 @@
     </div> -->
   </footer>
 </body>
+
 </html>
 <script type="text/javascript" src="/js/index.js"></script>
