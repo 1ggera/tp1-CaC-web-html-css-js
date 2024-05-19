@@ -7,28 +7,34 @@
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: #2B2B2B;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151515;
     width: 100%;
-    padding: 10px 0px;
     top: 0;
-    position: fixed;
+    position: sticky;
     color: #fff;
     z-index: 1;
+    height: 4.5rem;
+    background-image: linear-gradient(to top, #050a0e, rgba(8, 126, 250, 0.251));
 }
 
-.nav-logo-image {
-    width: 30%;
+.logo {
+    min-width: 2.7em;
+    max-width: 5.3em;
+    margin: 0 0 0 3rem;
 }
 
 .nav-menu-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
-    width: 50%;
-    font-size: 1.3rem;
-    gap: 0.3rem;
+    font-size: 1.1rem;
+    gap: 1.5rem;
+    margin: 0 3rem 0 0;
 }
 
 .nav-menu-item>a {
@@ -59,9 +65,9 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    transition: width 0.5s ease;
+    transition: width 0.3s ease;
     transform: translateX(-50%);
-    background-color: darkcyan;
+    background-color: #08c8fa;
 }
 
 .nav-menu-list .nav-menu-item a:hover::before {
@@ -75,7 +81,6 @@
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    
 }
 
 /* Consulta de medios para hacer el menú responsive */
@@ -85,6 +90,45 @@
     }
     .nav-menu {
         flex-direction: column; /* Cambiamos a columna */
+        align-items: center; /* Centramos los elementos */
+    }
+
+    .nav-menu-list {
+        display: none; /* Ocultamos la lista en pantallas pequeñas */
+    }
+
+    /* Mostrar el botón de menú en pantallas pequeñas */
+    .nav-menu-toggle {
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Estilo de la lista desplegable */
+    .nav-menu-dropdown {
+        display: none; /* Inicialmente oculto */
+        position: absolute;
+        top: 100%; /* Aparece debajo del botón de menú */
+        left: 0;
+        background-color: #2B2B2B;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Mostrar la lista desplegable cuando se hace clic en el botón de menú */
+    .nav-menu-toggle:focus + .nav-menu-dropdown {
+        display: block;
+    }
+}
+
+@media(max-width:375px){
+    .nav-logo-image{
+
+    }
+    .nav-menu {
+        flex-direction: row; /* Cambiamos a columna */
         align-items: center; /* Centramos los elementos */
     }
 

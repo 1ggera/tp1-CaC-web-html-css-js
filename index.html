@@ -9,33 +9,37 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="./css/navbar.css" />
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/index.css" />
   <title>TecniFull</title>
+  <link rel="icon" href="images/tecnifull-favicon-black.png">
 </head>
 
 <body>
   <header class="header">
     <!-- NAVBAR / MENU DE PÁGINA -->
     <nav class="nav-menu">
-      <input title="asd" class="newMenu" id="newMenu" type="checkbox" />
-      <label for="newMenu"></label>
-
-      <ul class="nav-menu-list">
-        <li class="nav-menu-item"><a href="#">Inicio</a></li>
-        <li class="nav-menu-item">
-          <a href="./pages/services.html">Servicios</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="./pages/about.html">Sobre nosotros</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="./pages/contact.html">Contáctanos</a>
-        </li>
-      </ul>
-
+      <figure>
+        <a href="https://tecnifull.zeabur.app/">
+          <img class="logo" src="images/logo-no-background.png" alt="Icon" aria-label="tecnifull-logo"><!--style="height: 45px;" -->
+        </a>
+      </figure>        
+      
+      <label for="newMenu">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item"><a href="https://tecnifull.zeabur.app/">Inicio</a></li>
+          <li class="nav-menu-item">
+            <a href="./pages/services.html">Servicios</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./pages/about.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./pages/contact.html">Contáctanos</a>
+          </li>
+        </ul>
+      </label>   
     </nav>
     <div class="container">
       <div class="texto-home">
@@ -43,7 +47,7 @@
         <br>
         <h2>Hasta 20% OFF en monitores y memorias</h3>
           <br>
-          <ul style="list-style:none;">
+          <ul>
             <li>Todos los medios de pago</li>
             <li>Comprando 3 productos envío gratis</li>
             <li>Atención personalizada</li>
@@ -51,7 +55,9 @@
           <br>
           <button>Obtener oferta</button>
       </div>
-      <img class="img-home" src="./images/setgamer.jpg" alt="img-mem-ram">
+      <div class="img-container">
+        <img class="img-home" src="./images/setgamer.jpg" alt="img-mem-ram">
+      </div>      
     </div>
   </header>
   <div class="nav-menu-separator"></div>
@@ -128,7 +134,7 @@
     <section class="tarjetas-productos">
       <div class="producto">
         <picture>
-          <img src="/images/setgamer2.jpg" alt="memorias ram">
+          <img src="/images/monitor.png" alt="monitor samsung">
         </picture>
         <div class="detalle">
           <p>

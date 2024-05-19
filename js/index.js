@@ -1,3 +1,4 @@
+//CARRUSEL
 let flechas = document.getElementsByTagName('span');
 
 // Selecciona todos los elementos del documento HTML que tienen la clase producto
@@ -41,3 +42,4 @@ let movim_izq = () => {
 
 flechas[1].onclick = ()=>{movim_der();}
 flechas[0].onclick = ()=>{movim_izq();}
+//FIN CARRUSEL

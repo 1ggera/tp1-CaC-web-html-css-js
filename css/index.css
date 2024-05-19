@@ -9,7 +9,7 @@ body {
   font-weight: 450;
   font-size: 16px;
   color: aliceblue;
-  background-color: #050a0e;
+  background-color: #080b13;
   height: auto;
 }
 
@@ -17,44 +17,62 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: lightseagreen;
   margin: 0 0 30px 0;
   font-size: 20px;
 }
 
-.header h2 {
-  font-family: 'DM Sans';
-}
-
 .container {
-  margin: 0 auto;
+  width: auto;
+  height: auto;
+  margin: 0 1.3em;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem 1.5rem;
+  align-content: space-around;
 }
 
 .texto-home {
+  flex-shrink: 1;
   font-family: 'Noto Sans', sans-serif;
-  padding: 1.5rem;
-  color: lightseagreen;
+  padding: 1.3rem;
+  order: 0;
 }
-
+.texto-home h1{
+  font-size: 2em;
+  color: #08c8fa;
+}
+.texto-home h2 {
+  color: aliceblue;
+}
+.texto-home li{
+  color: aliceblue;
+  font-size: 1.5rem;
+  list-style:none;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .img-home {
-  padding: 30px;
-  width: 500px;
-  height: 400px;
+  flex-shrink: 1;
+  padding: 1em;
+  max-height: 500px;
+  max-width: 500px;
+  order: 1;
 }
 
 .container-promos{
-  height: 700px;
+  height: 680px;
 }
 
 .titulo-promos {
   display: flex;
-  font-size: 1.6em;
+  font-size: 1.4em;
   justify-content: center;
-  color: lightseagreen;
+  color: #08c8fa;
   margin: 0 0 30px 0;
 }
 
@@ -82,7 +100,7 @@ body {
   text-align: center;
 }
 .card:hover{
-  box-shadow: 0 0 20px 0 rgba(8, 200, 250, 0.702);
+  box-shadow: 0 0 20px 0 #08c8fa;
   transform: scale(1.05);
 }
 
@@ -153,17 +171,19 @@ body {
 .titulo-carrusel{
   padding: 10px;
   text-align: center;
-  color: lightseagreen;
+  color: #08c8fa;
   font-size: 1.8em;  
+
 }
 
 .galeria-productos{
+  display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
   /* font-family: 'Lucida Sans', sans-serif; */
-  width: 98%;
-  height: 800;
-  margin: 10px;
+  width: 96%;
+  height: auto;
+  margin: 55px auto;
   position: relative;
   padding: 10px 0;
   /* background-color: rgb(48, 156, 97); */
@@ -186,10 +206,11 @@ body {
   padding: 20px;
   justify-content: space-between;
   border-bottom: 2px solid #ddd;
+  /* background-color: aqua; */
 }
 
 .encabezado-carrusel p span{
-  font-size: 40px;
+  font-size: 3rem;
   margin: 0 5px;
   cursor: pointer;
   color: #fff;
@@ -198,21 +219,20 @@ body {
   display: inline-block;
   line-height: 20px;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .encabezado-carrusel p span:hover{
-  background: blue;
+  background: #08c8fa;
 }
 
 .tarjetas-productos{
   width: 90%;
-  height: 550px;
-  margin: 0.25rem;
+  height: 500px;
   display: flex;
-  align-items: center;
+  /* align-items: flex-start; */
   overflow-x:auto; /*para el desplazamiento de los productos en el DOM*/
-  gap: 4px;
-  margin: auto;
+  gap: 0.25rem;
+  margin: 0 auto;
 }
 .tarjetas-productos::-webkit-scrollbar{
   display: none;
@@ -230,7 +250,7 @@ body {
 
 picture {
   width: 100%;
-  height: 70%;
+  height: 60%;
   /* height: 200px;*/
   width: 100%; 
   padding: 0.25rem;
@@ -293,7 +313,7 @@ picture img{
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(8, 200, 250, 0.702);
 }
-
+/* ugnu.itjua87@juaxe.com */
 @media(min-width:1441px){
 
 }
