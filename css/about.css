@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-card {
+    height: 300px;
+    width: auto;
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+}
