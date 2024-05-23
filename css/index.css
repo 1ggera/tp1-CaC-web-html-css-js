@@ -78,28 +78,28 @@ body {
   font-size: 1.4em;
   justify-content: center;
   color: #08c8fa;
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
 }
 
 .promociones {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 99%;
+  max-width: 100%;
   height: 500px;
   margin: 0;
-  gap: 0.3rem;
+  gap: 1rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  /* width: 80%; */
-  flex-basis: 28%;
+  width: 20%;
+  height: 450px;
+  flex-basis: 26%;
   padding: 0.5rem;
   margin: 0.25rem;
-  min-height: 30rem;
   background-color: #161b3f;
   transition: all 0.4s ease;
   text-align: center;
@@ -107,36 +107,38 @@ body {
 
 .card:hover {
   box-shadow: 0 0 20px 0 #08c8fa;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .img-card {
   height: 12rem;
-  transition: all 0.2s ease-in-out;
+  width: 100%;
+  /* transition: all 0.2s ease-in-out; */
 }
 
 .texto-card {
-  height: 15rem;
+  margin-top: 3px;
+  height: 10rem;
   padding: 0.25rem;
   flex-grow: 1;
   color: whitesmoke;
 }
 
 .texto-card>h2 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 
 .texto-card>p {
-  font-size: 1.4rem;
-  line-height: 1.55;
+  font-size: 1.15rem;
+  line-height: 1.3;
   font-weight: 500;
 }
-
-.card:hover .img-card {
-  height: 15rem;
+.texto-card:hover{
+  color: #08c8fa;
 }
 
 .img-card img {
+  flex-grow: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -144,7 +146,7 @@ body {
 }
 
 .card:hover .button-oferta a {
-  opacity: 2;
+  opacity: 1;
   width: 95%;
 }
 
@@ -155,7 +157,7 @@ body {
   width: 100%;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .button-oferta a {
@@ -181,7 +183,6 @@ body {
   text-align: center;
   color: #08c8fa;
   font-size: 1.8em;
-
 }
 
 .galeria-productos {
@@ -332,12 +333,11 @@ picture img {
   box-shadow: 0 0 20px 0 rgba(8, 200, 250, 0.702);
 }
 
-/* ugnu.itjua87@juaxe.com */
 @media(min-width:1441px) {}
 
 @media(max-width:1024px) {}
 
-/* hasta 768 */
+
 @media(max-width:768px) {
   .promociones {
     /* height: 900px; */
@@ -383,4 +383,154 @@ picture img {
 
 @media(max-width:375px) {}
 
-@media(max-width:320px) {}
+@media(max-width:320px) {
+  .header{
+    margin:0
+  }
+  .header .container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    padding: 3px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .texto-home{
+    display: flex;
+    width: 99%;
+    margin-top: 0.5rem;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .texto-home h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0 1rem;
+    /* color: red; */
+}
+
+.container .texto-home h2{
+    font-size: 1.4rem;
+    font-weight: 800;
+    /* color: blue; */
+}
+
+.container .texto-home li{
+    font-size: 1.2rem;
+    font-weight: 800;
+    /* color: yellow; */
+    margin-bottom: 10px;
+}
+
+.img-container{
+    position: relative;
+    max-width: 100px;
+}
+
+.img-home{
+    min-width: 20rem;
+    min-height: 18rem;
+}
+
+.titulo-promos h1{
+  font-size: 1.8rem;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.container-promos{
+  flex-shrink: 1;
+  height: auto;
+}
+
+  .promociones {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    height: auto;
+    padding: 10px 0;
+    margin-bottom: 1rem;
+    width: 100;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 80%;
+    flex-basis: 28%;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    min-height: 10rem;
+    background-color: #161b3f;
+    text-align: center;
+    /* transition: all 0.2s ease; */
+  }
+
+  .img-card img{
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+    height: 12em;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+  }
+  .card:hover {
+    box-shadow: 0 0 20px 0 #08c8fa;
+  }
+
+  .texto-card{
+    height: auto;
+    flex-grow: 1;
+    /* color: #08c8fa; */
+  }
+  .texto-card p{
+    font-size: 1.15rem;
+  }
+  .texto-card:hover{
+    color: #08c8fa;
+  }
+
+  /* CARRUSEL */
+  
+  .galeria-productos{
+    margin: 1rem 0;
+  }
+  .encabezado-carrusel{
+    font-size: 10px;
+    width: 100%;
+    padding: 0 0.5rem;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+  }
+  .encabezado-carrusel h1{
+    font-size: 1.15rem;
+    align-items: center;
+  }
+
+  .encabezado-carrusel p span{
+    margin: 0;
+    padding-top: 3px;
+  }
+
+  .tarjetas-productos .producto{
+    background-color: #08c8fa;
+  }
+
+  .estamos-cerca{
+    flex-grow: 1;
+  }
+}
