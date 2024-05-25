@@ -1,3 +1,10 @@
+//MENU
+document.querySelector('.nav-toggle').addEventListener('click', function () {
+  document.querySelector('.nav-menu-list').classList.toggle('show');
+});
+
+
+
 //CARRUSEL
 let flechas = document.getElementsByTagName('span');
 
@@ -5,22 +12,30 @@ let flechas = document.getElementsByTagName('span');
 let producto = document.getElementsByClassName('producto');
 
 // Calcula el número de páginas necesarias para mostrar todos las cards, asumiendo que quiero mostrar 4 cards por página. Ceil redondea hacia arriba
-let producto_pagina = Math.ceil(producto.length/4);
+let producto_pagina = producto.length;
 
-let l = 0;
-let movePer = 40.34;
-let maxMove = 210;
+let l = 0; //cuanto se movió la fila de productos
+let movePer = 40;
+let maxMove = 200;
 
 //vista para pantallas 768px 
-let telefono_view = window.matchMedia("(max-width: 768px)");
-if(telefono_view.matches){
-  movePer = 55.36;
-  maxMove = 254;
+let pantalla;
+if(pantalla = window.matchMedia("(max-width: 320px)")){
+  movePer = 40;
+  maxMove = 1550;
+}
+else if(pantalla = window.matchMedia("(max-width: 768px)")){
+  movePer = 40;
+  maxMove = 200;
 }
 
+
+//botones
 let movim_der = () =>{
   l = l + movePer;
-  if(producto.length == 1){l = 0;}
+  if(producto.length == 1){
+    l = 0;
+  }
 
   for(const i of producto)
   {
@@ -31,7 +46,9 @@ let movim_der = () =>{
 
 let movim_izq = () => {
   l = l - movePer;
-  if(l<=0){l=0;}
+  if(l<=0){
+    l=0;
+  }
 
   for(const i of producto)
   {

@@ -13,6 +13,7 @@ body {
   height: auto;
 }
 
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -133,7 +134,8 @@ body {
   line-height: 1.3;
   font-weight: 500;
 }
-.texto-card:hover{
+
+.texto-card:hover {
   color: #08c8fa;
 }
 
@@ -240,9 +242,8 @@ body {
   height: 500px;
   display: flex;
   /* align-items: flex-start; */
-  overflow-x: auto;
-  /*para el desplazamiento de los productos en el DOM*/
-  gap: 0.25rem;
+  overflow-x: auto;/*para el desplazamiento de los productos en el DOM*/
+  gap: 0.55rem;
   margin: 0 auto;
 }
 
@@ -250,7 +251,7 @@ body {
   display: none;
 }
 
-.tarjetas-productos .producto {
+ .producto {
   min-width: 23%;
   height: 90%;
   background: orange;
@@ -274,10 +275,11 @@ picture {
 
 picture img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
-.detalle, .boton-agregar-producto {
+.detalle,
+.boton-agregar-producto {
   width: 90%;
   margin: auto;
   padding: 5px;
@@ -364,7 +366,8 @@ picture img {
     margin: 0 10px 0 0;
   }
 
-  .detalle, .boton-agregar-producto {
+  .detalle,
+  .boton-agregar-producto {
     font-size: 14px;
   }
 
@@ -384,10 +387,11 @@ picture img {
 @media(max-width:375px) {}
 
 @media(max-width:320px) {
-  .header{
-    margin:0
+  .header {
+    margin: 0
   }
-  .header .container{
+
+  .header .container {
     display: flex;
     width: 100%;
     height: 100%;
@@ -396,9 +400,9 @@ picture img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.header .texto-home{
+  .header .texto-home {
     display: flex;
     width: 99%;
     margin-top: 0.5rem;
@@ -407,51 +411,51 @@ picture img {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
+  }
 
-.container .texto-home h1{
+  .container .texto-home h1 {
     font-size: 1.8rem;
     font-weight: 800;
     margin: 0 1rem;
     /* color: red; */
-}
+  }
 
-.container .texto-home h2{
+  .container .texto-home h2 {
     font-size: 1.4rem;
     font-weight: 800;
     /* color: blue; */
-}
+  }
 
-.container .texto-home li{
+  .container .texto-home li {
     font-size: 1.2rem;
     font-weight: 800;
     /* color: yellow; */
     margin-bottom: 10px;
-}
+  }
 
-.img-container{
+  .img-container {
     position: relative;
     max-width: 100px;
-}
+  }
 
-.img-home{
+  .img-home {
     min-width: 20rem;
     min-height: 18rem;
-}
+  }
 
-.titulo-promos h1{
-  font-size: 1.8rem;
-  font-weight: 800;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
+  .titulo-promos h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
 
-.container-promos{
-  flex-shrink: 1;
-  height: auto;
-}
+  .container-promos {
+    flex-shrink: 1;
+    height: auto;
+  }
 
   .promociones {
     display: flex;
@@ -465,7 +469,7 @@ picture img {
     align-items: center;
   }
 
-  .card{
+  .card {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -479,7 +483,7 @@ picture img {
     /* transition: all 0.2s ease; */
   }
 
-  .img-card img{
+  .img-card img {
     flex-shrink: 1;
     align-items: center;
     justify-content: center;
@@ -487,28 +491,32 @@ picture img {
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
   }
+
   .card:hover {
     box-shadow: 0 0 20px 0 #08c8fa;
   }
 
-  .texto-card{
+  .texto-card {
     height: auto;
     flex-grow: 1;
     /* color: #08c8fa; */
   }
-  .texto-card p{
+
+  .texto-card p {
     font-size: 1.15rem;
   }
-  .texto-card:hover{
+
+  .texto-card:hover {
     color: #08c8fa;
   }
 
   /* CARRUSEL */
-  
-  .galeria-productos{
+
+  .galeria-productos {
     margin: 1rem 0;
   }
-  .encabezado-carrusel{
+
+  .encabezado-carrusel {
     font-size: 10px;
     width: 100%;
     padding: 0 0.5rem;
@@ -516,21 +524,24 @@ picture img {
     justify-content: space-between;
     align-items: center;
   }
-  .encabezado-carrusel h1{
+
+  .encabezado-carrusel h1 {
     font-size: 1.15rem;
     align-items: center;
   }
 
-  .encabezado-carrusel p span{
+  .encabezado-carrusel p span {
     margin: 0;
     padding-top: 3px;
   }
 
-  .tarjetas-productos .producto{
+  .tarjetas-productos .producto {
     background-color: #08c8fa;
+    min-width: 90%;
+    height: 400px;
   }
 
-  .estamos-cerca{
+  .estamos-cerca {
     flex-grow: 1;
   }
 }
