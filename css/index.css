@@ -335,6 +335,15 @@ picture img {
   box-shadow: 0 0 20px 0 rgba(8, 200, 250, 0.702);
 }
 
+/* services */
+.services_404 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media(min-width:1441px) {}
 
 @media(max-width:1024px) {}
