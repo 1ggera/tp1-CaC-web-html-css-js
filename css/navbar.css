@@ -1,12 +1,32 @@
 .nav-menu {
     display: flex;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px 0px;
+    padding: 10px 20px;
     top: 0;
     width: 100%;
+    height: 6rem;
+    margin-bottom: 2rem;
     z-index: 10;
+    box-shadow: 0 0 10px 0 #0acafa;
+    background: linear-gradient(to bottom, hsla(211, 96%, 51%, 0.251), #050a0e);
+}
+
+.nav-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(to bottom, hsla(211, 96%, 51%, 0.251), #050a0e),
+        url('/images/tcnf.jpg') no-repeat center center/cover;
+    opacity: 0.5;
+    /* Ajusta la opacidad según lo necesario */
+    z-index: -1;
+    /* Coloca la imagen detrás del contenido */
 }
 
 .logo {
@@ -33,8 +53,11 @@
 }
 
 .nav-menu-item a:hover {
-    background-color: #575757;
-    border-radius: 4px;
+    background: linear-gradient(to top, hsla(211, 96%, 51%, 0.251), #050a0e);
+    box-shadow: 0 0 10px 0 #0acafa;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .nav-toggle {
@@ -45,27 +68,7 @@
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-menu-list {
-        flex-direction: column;
-        width: 100%;
-        display: none;
-    }
-
-    .nav-menu-list.show {
-        display: flex;
-    }
-
-    .nav-menu-item {
-        width: 100%;
-        margin: 0;
-    }
-
-    .nav-menu-item a {
-        padding: 12px 20px;
-        width: 100%;
+        align-items: flex-start;
     }
 
     .nav-toggle {
@@ -78,22 +81,40 @@
         font-size: 18px;
         margin-left: auto;
     }
+
+    .nav-menu-list {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-menu-list.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        /*desde arriba*/
+        left: 0;
+        right: 0;
+        background-color: #333;
+    }
+
+    .nav-menu-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-menu-item a {
+        padding: 12px 20px;
+        width: 100%;
+    }
 }
 
 @media(max-width: 320px) {
-    .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        /* background-color: brown; */
-        box-sizing: border-box;
-    }
     .nav-menu {
         display: flex;
         flex-direction: row;
-        height: 2.5em;
+        height: 3em;
         position: sticky;
         justify-content: space-between;
         align-items: center;
@@ -105,51 +126,65 @@
     }
 
     .logo {
-        height: 1.8rem;
+        height: 2rem;
         width: auto;
-        margin-left: 0.5rem;
+        margin: 0.25rem 0 0 0.5rem;
         font-weight: 800;
     }
 
     /* burger menu */
     .nav-toggle {
-        display:block;
+        display: block;
         cursor: pointer;
         /* color: red; */
-        font-size: 1rem;
+        font-size: 1.15rem;
         margin-right: 0.5rem;
         padding: 5px 7px;
         border-radius: 5px;
+        background-color: #050a0e;
+
     }
 
     .nav-toggle:hover {
-        color: #08c8fa;
-        box-shadow: 0 0 5px 0 #08c8fa;
         border-radius: 5px;
+        box-shadow: 0 0 5px 0 #08c8fa;
+        color: #08c8fa;
     }
-    
-    /* .nav-menu-list {
-        list-style: none;
+
+    /* contenedor de la lista del menu */
+    .nav-menu-list {
         flex-direction: column;
         width: 100%;
         display: none;
-        font-size: 20px;
-    } */
-    
+        margin-top: 0.6rem;
+    }
+
     .nav-menu-list.show {
         display: block;
-        background-color: skyblue;
-        font-size: 0.75rem;
-        width: 100px;
+        width: auto;
+        height: 120px;
+        box-shadow: 0 0 5px 0 #08c8fa;
+        background: linear-gradient(to top, #161b3f, #050a0e);
     }
 
     .nav-menu-item {
-        width: 90px;
+        display: flex;
+        width: 100%;
+        padding: 0;
         margin: 0;
+        justify-content: center;
     }
 
     .nav-menu-item a {
-        padding: 12px 20px;
-        width: 100%;
+        width: auto;
+        padding: 0.1rem;
+        margin: 0.15rem 0.15rem;
+        font-size: 1rem;
+        gap: 0.25rem;
     }
+
+    .nav-menu-item a:hover {
+        color: #08c8fa;
+    }
+
 }

@@ -7,10 +7,11 @@
 
 body {
   font-weight: 450;
-  font-size: 16px;
   color: aliceblue;
-  background-color: #080b13;
+  /* background-color: #050a0e; */
+  background-color: #050a0e;
   height: auto;
+  font-size: 20px;
 }
 
 
@@ -18,6 +19,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  /* background: linear-gradient(to bottom, hsla(211, 96%, 51%, 0.251), #050a0e); */
   margin: 0 0 30px 0;
   font-size: 20px;
 }
@@ -30,7 +32,6 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem 1.5rem;
-  align-content: space-around;
 }
 
 .texto-home {
@@ -42,7 +43,7 @@ body {
 
 .texto-home h1 {
   font-size: 2em;
-  color: #08c8fa;
+  color: #0acafa;
 }
 
 .texto-home h2 {
@@ -57,7 +58,7 @@ body {
 
 .img-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
@@ -68,6 +69,7 @@ body {
   max-height: 500px;
   max-width: 500px;
   order: 1;
+  align-content: flex-end;
 }
 
 .container-promos {
@@ -184,7 +186,7 @@ body {
   padding: 10px;
   text-align: center;
   color: #08c8fa;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .galeria-productos {
@@ -242,7 +244,8 @@ body {
   height: 500px;
   display: flex;
   /* align-items: flex-start; */
-  overflow-x: auto;/*para el desplazamiento de los productos en el DOM*/
+  overflow-x: auto;
+  /*para el desplazamiento de los productos en el DOM*/
   gap: 0.55rem;
   margin: 0 auto;
 }
@@ -251,7 +254,7 @@ body {
   display: none;
 }
 
- .producto {
+.producto {
   min-width: 23%;
   height: 90%;
   background: orange;
@@ -319,6 +322,8 @@ picture img {
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
+  /* background-color: rebeccapurple; */
+  height: auto;
 }
 
 .estamos-cerca {
@@ -328,11 +333,10 @@ picture img {
   flex-basis: auto;
   padding: 1rem;
   height: 300px;
-  transition: all 0.5s ease-in-out;
   margin: 1.5rem 0;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(8, 200, 250, 0.702);
+  box-shadow: 0 0 15px 0 #08c8fa;
 }
 
 /* services */
@@ -343,6 +347,66 @@ picture img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* FOOTER */
+.footer-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 250px;
+  justify-content: space-around;
+  padding: 20px 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-image: linear-gradient(to bottom, #050a0e, rgba(8, 126, 250, 0.251));
+}
+
+/* LINKS FOOTER */
+.footer-link-list {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  width: 11em;
+  line-height: 2em;
+}
+
+.footer-link-list>li>a {
+  text-decoration: none;
+  color: #0acafa;
+  font-size: 15px;
+}
+
+.footer-link-list:has(li:hover) li:not(:hover) {
+  filter: blur(4px);
+  transition: filter 1s ease
+}
+
+.footer-map {
+  width: 11em;
+  align-items: center;
+  justify-content: center;
+}
+
+.copywriting-footer {
+  width: 11em;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.icono-footer {
+  display: block;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+}
+
 
 @media(min-width:1441px) {}
 
@@ -387,6 +451,28 @@ picture img {
   a {
     padding: 0;
   }
+
+  /* Estilos para pantallas más grandes que 768px 
+  .footer-page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 10% 0px;
+  }
+
+  .footer-link-list {
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    gap: 10px
+  }
+
+  .footer-map {
+    width: 80%;
+  }
+  */
 }
 
 @media(max-width:600px) {}
@@ -397,7 +483,7 @@ picture img {
 
 @media(max-width:320px) {
   .header {
-    margin: 0
+    margin: 0;
   }
 
   .header .container {
@@ -445,11 +531,16 @@ picture img {
   .img-container {
     position: relative;
     max-width: 100px;
+    justify-content: center;
   }
 
   .img-home {
-    min-width: 20rem;
-    min-height: 18rem;
+    min-width: 18rem;
+    min-height: 16rem;
+  }
+
+  .titulo-promos {
+    margin: 1.5rem;
   }
 
   .titulo-promos h1 {
@@ -496,7 +587,7 @@ picture img {
     flex-shrink: 1;
     align-items: center;
     justify-content: center;
-    height: 12em;
+    height: 10em;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
   }
@@ -506,7 +597,7 @@ picture img {
   }
 
   .texto-card {
-    height: auto;
+    margin: 10px 0 0 0;
     flex-grow: 1;
     /* color: #08c8fa; */
   }
@@ -519,16 +610,25 @@ picture img {
     color: #08c8fa;
   }
 
+  .button-oferta {
+    margin-top: 0.25rem;
+    height: 2.3rem;
+    font-size: 0.95rem;
+  }
+
   /* CARRUSEL */
 
   .galeria-productos {
-    margin: 1rem 0;
+    /* background-color: #444; */
+    height: 520px;
+    width: 100%;
+    margin: 5px 0 0 0;
   }
 
   .encabezado-carrusel {
     font-size: 10px;
     width: 100%;
-    padding: 0 0.5rem;
+    padding: 0 0.8rem;
     /* background-color: red; */
     justify-content: space-between;
     align-items: center;
@@ -544,13 +644,57 @@ picture img {
     padding-top: 3px;
   }
 
+  .tarjetas-productos {
+    margin: 1rem auto;
+    height: 420px;
+  }
+
   .tarjetas-productos .producto {
     background-color: #08c8fa;
     min-width: 90%;
     height: 400px;
   }
 
-  .estamos-cerca {
-    flex-grow: 1;
+  .contactanos {
+    width: 100%;
   }
+
+  .estamos-cerca {
+    height: auto;
+    width: 260px;
+    padding: 5px;
+    margin: 10px;
+    align-items: center;
+    font-size: 15px;
+    /* background-color: #08c8fa; */
+  }
+
+  .footer-page {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footer-link-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .footer-link-list li {
+    font-size: 15px;
+    color: antiquewhite
+  }
+
+  .copywriting-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 }

@@ -4,107 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú Responsive con Imagen</title>
-  <!-- <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .nav-menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #333;
-      padding: 10px;
-    }
-
-    .nav-logo-image img {
-      height: 40px;
-      /* Ajusta la altura de la imagen */
-      width: auto;
-      /* Mantén la proporción de la imagen */
-    }
-
-    .nav-menu-list {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      transition: ease 0s, border 0.2s ease 0s, color 0.2s ease 0s, opacity 0.2s ease-in-out 0s, ;
-    }
-
-    .nav-menu-item {
-      margin-left: 20px;
-    }
-
-    .nav-menu-item a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 12px;
-      display: block;
-    }
-
-    .nav-menu-item a:hover {
-      background-color: #575757;
-      border-radius: 4px;
-    }
-
-    /* Estilos para móviles */
-    @media (max-width: 768px) {
-      .nav-menu {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-toggle {
-        display: block;
-        cursor: pointer;
-        background-color: #333;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        font-size: 18px;
-        margin-left: auto;
-      }
-
-      .nav-menu-list {
-        flex-direction: column;
-        width: 100%;
-        display: none;
-      }
-
-      .nav-menu-list.show {
-        display: flex;
-      }
-
-      .nav-menu-item {
-        width: 100%;
-        margin: 0;
-      }
-
-      .nav-menu-item a {
-        padding: 12px 20px;
-        width: 100%;
-      }
-    }
-  </style> -->
+  <title>TecniFull</title>
 </head>
-
 <body>
   <nav class="nav-menu">
     <div class="nav-logo-image">
-      <img alt="nav-logo-image" src="../images/logo.PNG" />
+      <a href="https://tecnifull.zeabur.app/">
+        <img alt="nav-logo-image" src="../images/logo.PNG" />
+      </a>
     </div>
     <button class="nav-toggle">☰</button>
     <ul class="nav-menu-list">
       <li class="nav-menu-item"><a href="#">Inicio</a></li>
-      <li class="nav-menu-item"><a href="#">Servicios</a></li>
-      <li class="nav-menu-item"><a href="#">Sobre nosotros</a></li>
-      <li class="nav-menu-item"><a href="#">Contáctanos</a></li>
+      <li class="nav-menu-item"><a href="/pages/services.html">Servicios</a></li>
+      <li class="nav-menu-item"><a href="./pages/about.html">Sobre nosotros</a></li>
+      <li class="nav-menu-item"><a href="./pages/contact.html">Contáctanos</a></li>
     </ul>
   </nav>
-
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function () {
       document.querySelector('.nav-menu-list').classList.toggle('show');
