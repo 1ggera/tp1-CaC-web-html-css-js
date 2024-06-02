@@ -3,6 +3,7 @@ document.querySelector('.nav-toggle').addEventListener('click', function () {
   document.querySelector('.nav-menu-list').classList.toggle('show');
 });
 
+//PROMOCIONES
 
 
 //CARRUSEL
