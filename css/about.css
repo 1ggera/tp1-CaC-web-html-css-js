@@ -9,13 +9,12 @@ body {
     font-weight: 450;
     font-size: 16px;
     color: aliceblue;
-    /* background-color: #050a0e; */
     background-color:#050a0e;
     height: auto;
     font-size: 20px;
 }  
 
-.nav-menu {
+/* .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +59,7 @@ body {
 
 .nav-toggle {
     display: none;
-}
+} */
 /* Estilos para móviles */
 @media (max-width: 768px) {
     .nav-menu {
