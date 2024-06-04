@@ -113,6 +113,32 @@
     }
 }
 
+
+@media(max-width: 480px){
+    .nav-menu{
+        flex-direction: row;
+        align-items: center;
+        height: 4em;
+    }
+
+    .nav-toggle{
+        font-size: 20px;
+        margin-right: 0.25rem;
+    }
+
+    .logo {
+        height: 2.1rem;
+        margin-left: 0.5rem;
+    }
+
+    .nav-menu-list.show {
+        top: 5.05rem;
+        box-shadow: 0 0 5px 0 #08c8fa;
+        background: linear-gradient(to top, #161b3f, #050a0e);
+        text-align: center;
+    }
+}
+
 @media(max-width: 375px) {
     .nav-menu{
         display: flex;

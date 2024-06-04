@@ -409,10 +409,11 @@ picture img {
 }
 
 
-@media(min-width:1441px) {}
+@media(min-width:1440px) {}
 
 @media(max-width:1024px) {}
 
+@media(max-width:834px) {}
 
 @media(max-width:768px) {
   .promociones {
@@ -476,9 +477,56 @@ picture img {
   */
 }
 
-@media(max-width:600px) {}
+@media(max-width:480px) {
+  .container{
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin: 0;
+    padding: 0 0.3rem;
+    flex-direction: column;
+  }
 
-@media(max-width:425px) {}
+  .img-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-home {
+    width: 80vw;
+    padding: 0.75em;
+  }
+
+  .container-promos{
+    width: 100%;
+    height: auto;
+  }
+
+  .titulo-promos{
+    /* color: #f88c33; */
+    margin: 0 0 50px 0;
+    text-align: center;
+  }
+
+  .promociones{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .card{
+    width: 55vw;
+  }
+  .img-card{
+    position: relative;
+    height: 10em;
+    width: 100%;
+  }
+  
+}
+
 
 @media(max-width:375px) {
   .container{
