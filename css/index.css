@@ -421,7 +421,7 @@ picture img {
   }
 
   .titulo-carrusel h1 {
-    font-size: 35px;
+    font-size: 2.6rem;
   }
 
   .titulo-carrusel p {
@@ -505,6 +505,7 @@ picture img {
 
   .titulo-promos{
     /* color: #f88c33; */
+    font-size: 1.4rem;
     margin: 0 0 50px 0;
     text-align: center;
   }
@@ -514,6 +515,7 @@ picture img {
     justify-content: center;
     height: 100%;
     flex-direction: column;
+    margin-bottom: 2.5rem;
   }
 
   .card{
@@ -525,6 +527,56 @@ picture img {
     width: 100%;
   }
   
+  .galeria-productos{
+    margin: 2rem auto;
+    width: 100%;
+  }
+  
+  .encabezado-carrusel{
+    padding: 0.25rem;
+  }
+  .encabezado-carrusel h1{
+    font-size: 1.6rem;
+  }
+  .encabezado-carrusel p span{
+    font-size: 45px;
+    margin: 0;
+    align-items: center;
+    margin: 0 0 0 3px;
+  }
+
+  .tarjetas-productos{
+    align-items: center;
+    padding: 0 0 0 0.25rem;
+  }
+
+  .estamos-cerca{
+    height: 8rem;
+    width: 75%;
+    margin: 1.3rem;
+    height: auto;
+    gap: 0.10rem;
+  }
+
+  .footer-page{
+    margin-top: 2.5rem;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-link-list{
+    width: 100%;
+  }
+
+  .footer-link-list li a{
+    font-size: 1.1rem;
+  }
+
+  .footer-map{
+    width: 15em;
+  }
 }
 
 
@@ -608,7 +660,6 @@ picture img {
   .tarjetas-productos{
     align-items: center;
     padding: 0 0 0 10px;
-    align-items: center;
   }
 
   .producto{
