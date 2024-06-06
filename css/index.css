@@ -77,7 +77,8 @@ body {
 
 .titulo-promos {
   display: flex;
-  font-size: 1.4em;
+  padding: 2px;
+  font-size: 1.1em;
   justify-content: center;
   color: #08c8fa;
   margin: 0 0 50px 0;
@@ -155,7 +156,7 @@ body {
 
 .button-oferta {
   display: flex;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   height: 3rem;
   width: 100%;
   justify-content: center;
@@ -246,7 +247,7 @@ body {
   overflow-x: auto;
   /*para el desplazamiento de los productos en el DOM*/
   gap: 0.75rem;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .tarjetas-productos::-webkit-scrollbar {
@@ -257,9 +258,9 @@ body {
   min-width: 23%;
   height: 90%;
   background-color: #161b3f;
-    border: 2px solid #f88c33;
-    box-shadow: 0 0 7px 0 #f88c33;
-  margin: auto;
+  border: 2px solid #f88c33;
+  box-shadow: 0 0 7px 0 #f88c33;
+  margin: 1rem 0.5rem 0.25rem 0.4rem;
   border-radius: 15px;
   position: relative;
   left: 0;
@@ -279,7 +280,7 @@ picture {
 
 picture img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .detalle,
@@ -416,8 +417,34 @@ picture img {
 @media(max-width:834px) {}
 
 @media(max-width:768px) {
+  .container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0 0.3rem;
+    flex-direction: column;
+  }
+  .texto-home{
+    padding: 0.8rem;
+  }
+  .img-container{
+    width: 100%;
+    max-width: 22em;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-home{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 1;
+    width: 22em;
+  }
   .promociones {
-    /* height: 900px; */
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .titulo-carrusel h1 {
@@ -438,7 +465,6 @@ picture img {
 
   .producto {
     min-width: 49%;
-    margin: 0 10px 0 0;
   }
 
   .detalle,
@@ -477,16 +503,53 @@ picture img {
   */
 }
 
-@media(max-width:480px) {
-  .container{
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    margin: 0;
-    padding: 0 0.3rem;
-    flex-direction: column;
+@media(max-width: 601px){
+  .img-home{
+    padding: 0.25em;
+    width: 20em;
+  }
+  .card{
+    height: 22em;
+    min-width: 30%;
+  }
+  .texto-card h2{
+    font-size: 1rem;
+  }
+  .texto-card p{
+    font-size: 1rem;
+  }
+  
+  .titulo-promos {
+    /* color: red; */
   }
 
+  .button-oferta{
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+
+  .tarjetas-productos{
+    align-items: center;
+    padding: 0 0 0 0.1rem;
+  }
+
+  .producto{
+    min-width: 46%;
+  }
+
+  .estamos-cerca{
+    width: 80%;
+    height: 100%;
+  }
+
+  .footer-page{
+    margin-top: 1.5rem;
+    height: 100%;
+  }
+}
+
+@media(max-width:480px) {
+  
   .img-container {
     position: relative;
     justify-content: center;
@@ -511,6 +574,7 @@ picture img {
   }
 
   .promociones{
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -519,7 +583,7 @@ picture img {
   }
 
   .card{
-    width: 55vw;
+    width: 60vw;
   }
   .img-card{
     position: relative;
@@ -527,6 +591,11 @@ picture img {
     width: 100%;
   }
   
+  .button-oferta {
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+  }
   .galeria-productos{
     margin: 2rem auto;
     width: 100%;
@@ -546,11 +615,13 @@ picture img {
   }
 
   .tarjetas-productos{
+    gap: 1rem;
     align-items: center;
     padding: 0 0 0 0.25rem;
   }
 
   .estamos-cerca{
+    font-size: 1.1rem;
     height: 8rem;
     width: 75%;
     margin: 1.3rem;
@@ -579,6 +650,30 @@ picture img {
   }
 }
 
+@media(max-width: 425px){
+  .encabezado-carrusel h1{
+    font-size: 1.5rem;
+  }
+  .producto{
+    min-width: 50vw;
+  }
+  .button-oferta {
+    margin-top: 0.4rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media(max-width: 412px){
+  .encabezado-carrusel h1{
+    font-size: 1.4rem;
+  }
+  
+  .button-oferta {
+    margin-top: 0.5rem;
+    height: 2.3rem;
+    font-size: 1rem;
+  }
+}
 
 @media(max-width:375px) {
   .container{
@@ -593,7 +688,7 @@ picture img {
   }
   
   .texto-home{
-    padding: 0 0.25rem;
+    padding: 0 0.5rem;
   }
 
   .img-container {
@@ -604,7 +699,7 @@ picture img {
 
   .img-home {
     padding: 0.75em;
-    min-width: 18em;
+    min-width: 85vw;
     min-height: 10em;
   }
 
@@ -627,7 +722,7 @@ picture img {
   }
 
   .card{
-    flex-basis: 80%;
+    width: 80%;
   }
 
   .titulo-carrusel{
@@ -648,10 +743,10 @@ picture img {
 
   .encabezado-carrusel h1{
     display: block;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .encabezado-carrusel p span{
-    font-size: 45px;
+    font-size: 43px;
     margin: 0;
     align-items: center;
     margin: 0 0 0 3px;
@@ -668,6 +763,7 @@ picture img {
   }
 
   .estamos-cerca{
+    font-size: 1.25rem;
     height: 440px;
     margin: 1.3rem;
     height: auto;
@@ -682,7 +778,6 @@ picture img {
   .footer-map{
     width: 14em;
   }
-  
 }
 
 @media(max-width:320px) {
@@ -742,7 +837,7 @@ picture img {
     margin: 1.5rem;
   }
 
-  .titulo-promos h1 {
+  .titulo-promos h2 {
     font-size: 1.8rem;
     font-weight: 800;
     align-items: center;
@@ -825,16 +920,15 @@ picture img {
   }
 
   .encabezado-carrusel {
-    font-size: 10px;
-    width: 100%;
-    padding: 0 0.8rem;
+    margin: 0 auto;
+    width: 90%;
     /* background-color: red; */
     justify-content: space-between;
     align-items: center;
   }
 
   .encabezado-carrusel h1 {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     align-items: center;
   }
 
