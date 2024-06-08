@@ -12,7 +12,7 @@
     box-shadow: 0 0 10px 0 #0acafa;
 }
 
-/* .nav-menu::before {
+.nav-menu::before {
     content: "";
     position: absolute;
     top: 0;
@@ -24,7 +24,7 @@
         url('/images/tcnf.jpg') no-repeat center center/cover;
     opacity: 0.5;
     z-index: -2; 
-} */
+}
 
 .logo {
     height: 40px;
@@ -61,7 +61,6 @@
     display: none;
 }
 
-/* Estilos para móviles */
 @media (max-width: 768px) {
     .nav-menu {
         height: 4.5em;
@@ -125,7 +124,6 @@
     }
 }
 
-
 @media(max-width: 480px){
     .nav-menu{
         flex-direction: row;
@@ -151,6 +149,12 @@
     }
 }
 
+@media(max-width: 412px){
+    .nav-menu-list.show {
+        top: 2.49rem;
+    }
+}
+
 @media(max-width: 375px) {
     .nav-menu{
         display: flex;
@@ -159,7 +163,7 @@
         position: sticky;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0.5rem;
+        padding: 10px 1rem;
         margin: 0;
         top: 0;
         width: 100%;
@@ -180,7 +184,7 @@
     }
 
     .nav-menu-list.show {
-        top: 3.6em;
+        top: 1.8rem;
         box-shadow: 0 0 8px 0 #08c8fa;
         background: linear-gradient(to top, #161b3f, #050a0e);
         text-align: center;

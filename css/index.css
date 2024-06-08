@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem;
 }
 
 .texto-home {
@@ -78,7 +78,7 @@ body {
 .titulo-promos {
   display: flex;
   padding: 2px;
-  font-size: 1.1em;
+  font-size: 1.5em;
   justify-content: center;
   color: #08c8fa;
   margin: 0 0 50px 0;
@@ -98,7 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  width: 20%;
+  width: 22%;
   height: 450px;
   flex-basis: 26%;
   padding: 0.5rem;
@@ -255,7 +255,7 @@ body {
 }
 
 .producto {
-  min-width: 23%;
+  min-width: 28%;
   height: 90%;
   background-color: #161b3f;
   border: 2px solid #f88c33;
@@ -409,12 +409,42 @@ picture img {
   display: inline-flex;
 }
 
-
-@media(min-width:1440px) {}
-
-@media(max-width:1024px) {}
-
-@media(max-width:834px) {}
+@media(max-width:834px) {
+  .container{
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .texto-home{
+    display: block;
+    text-align: center;
+  }
+  .img-container{
+    justify-content: center;
+  }
+  .img-home{
+    padding: 0;
+  }
+  .card{
+    flex-basis: 28%;
+  }
+  .button-oferta {
+    height: 2.1em;
+  }
+  .titulo-carrusel{
+    margin: 0 15px;
+  }
+  .galeria-productos{
+    width: 100%;
+    margin: 25px auto;
+  }
+  .producto{
+    min-width: 34%;
+  }
+  .estamos-cerca{
+    width: 84%;
+  }
+}
 
 @media(max-width:768px) {
   .container{
@@ -447,7 +477,16 @@ picture img {
     gap: 0.5rem;
   }
 
-  .titulo-carrusel h1 {
+  .card{
+    flex-basis: 28%;
+  }
+
+  .button-oferta {
+    height: 2.5rem;
+    font-size: 1.05rem;
+  }
+
+  .titulo-carrusel h2 {
     font-size: 2.6rem;
   }
 
@@ -455,7 +494,7 @@ picture img {
     width: 90%;
   }
 
-  .encabezado-carrusel h1 {
+  .encabezado-carrusel h3 {
     font-size: 25px;
   }
 
@@ -464,7 +503,7 @@ picture img {
   }
 
   .producto {
-    min-width: 49%;
+    min-width: 35%;
   }
 
   .detalle,
@@ -478,6 +517,10 @@ picture img {
 
   a {
     padding: 0;
+  }
+
+  .estamos-cerca{
+    width: 85%;
   }
 
   /* Estilos para pantallas más grandes que 768px 
@@ -517,10 +560,6 @@ picture img {
   }
   .texto-card p{
     font-size: 1rem;
-  }
-  
-  .titulo-promos {
-    /* color: red; */
   }
 
   .button-oferta{
@@ -604,7 +643,7 @@ picture img {
   .encabezado-carrusel{
     padding: 0.25rem;
   }
-  .encabezado-carrusel h1{
+  .encabezado-carrusel h3{
     font-size: 1.6rem;
   }
   .encabezado-carrusel p span{
@@ -651,7 +690,7 @@ picture img {
 }
 
 @media(max-width: 425px){
-  .encabezado-carrusel h1{
+  .encabezado-carrusel h3{
     font-size: 1.5rem;
   }
   .producto{
@@ -664,7 +703,7 @@ picture img {
 }
 
 @media(max-width: 412px){
-  .encabezado-carrusel h1{
+  .encabezado-carrusel h3{
     font-size: 1.4rem;
   }
   
@@ -722,7 +761,8 @@ picture img {
   }
 
   .card{
-    width: 80%;
+    width: 65%;
+    cursor: pointer;
   }
 
   .titulo-carrusel{
@@ -741,7 +781,7 @@ picture img {
     border-bottom: 2px solid #ddd;
   }
 
-  .encabezado-carrusel h1{
+  .encabezado-carrusel h3{
     display: block;
     font-size: 1rem;
   }
@@ -927,7 +967,7 @@ picture img {
     align-items: center;
   }
 
-  .encabezado-carrusel h1 {
+  .encabezado-carrusel h3 {
     font-size: 1.05rem;
     align-items: center;
   }
