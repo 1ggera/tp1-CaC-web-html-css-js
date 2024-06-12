@@ -242,7 +242,7 @@
     .nav-menu-list.show {
         display: block;
         width: auto;
-        top: 3.05em;
+        top: 0.95em;
         height: 120px;
         box-shadow: 0 0 5px 0 #08c8fa;
         background: linear-gradient(to top, #161b3f, #050a0e);

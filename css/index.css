@@ -43,10 +43,12 @@ body {
 .texto-home h1 {
   font-size: 2em;
   color: #0acafa;
+  margin-bottom: 1rem;
 }
 
 .texto-home h2 {
   color: aliceblue;
+  margin-bottom: 1rem;
 }
 
 .texto-home li {
@@ -845,7 +847,7 @@ picture img {
   .container .texto-home h1 {
     font-size: 1.8rem;
     font-weight: 800;
-    margin: 0 1rem;
+    margin: 1rem;
     /* color: red; */
   }
 
