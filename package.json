@@ -1,0 +1,24 @@
+{
+  "name": "tp1-cac-web-html-css",
+  "version": "1.0.0",
+  "description": "Proyecto web de estilo ecommerce como trabajo práctico grupal que forma parte del curso FullStack del programa Codo a Codo 2024.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ggera/tp1-CaC-web-html-css-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1ggera/tp1-CaC-web-html-css-js/issues"
+  },
+  "homepage": "https://github.com/1ggera/tp1-CaC-web-html-css-js#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
