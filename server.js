@@ -1,7 +1,7 @@
 //config para levantar el servidor
 const express = require('express')
 const app = express()
-const PORT = 3000
+//const PORT = 3000
 const productsRouter = require('./routes/products')
 
 app.use(express.json()) // se recibirá un json

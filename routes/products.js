@@ -109,13 +109,13 @@ router.put('/:id',(req,res)=>{
 //5to ENDPOINT
 //DELETE
 router.delete('/:id', (req, res) =>{
-  const productIndex = products.findIndex(prod => prod.id === parseInt(req.params.id))
+  // parsea el id q le ingresamos y 
+  const productIndex = products.findIndex(prod => prod.id === parseInt(req.params.id)); 
+  if(productIndex == -1) return res.status(404).send('Producto no encontrado'); 
 
-  if(productIndex == -1) return res.status(404).send('Producto no encontrado');
+  const deleteProduct = products.splice(productIndex, 1); 
 
-  const deleteProduct = products.splice(productIndex, 1);
-
-  res.json(deleteProduct)
+  res.json(deleteProduct) // cuando finaliza muestra la película eliminada
 })
 
 
