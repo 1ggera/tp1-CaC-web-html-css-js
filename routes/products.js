@@ -109,7 +109,7 @@ router.put('/:id',(req,res)=>{
 //5to ENDPOINT
 //DELETE
 router.delete('/:id', (req, res) =>{
-  // parsea el id q le ingresamos y 
+  // parsea el id q le ingresamos y lo busca en el listado
   const productIndex = products.findIndex(prod => prod.id === parseInt(req.params.id)); 
   if(productIndex == -1) return res.status(404).send('Producto no encontrado'); 
 
