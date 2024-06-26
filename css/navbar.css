@@ -21,7 +21,7 @@
     bottom: 0;
     background:
         linear-gradient(to bottom, hsla(211, 96%, 51%, 0.251), #050a0e),
-        url('/images/tcnf.jpg') no-repeat center center/cover;
+        url('../images/tcnf.jpg') no-repeat center center/cover;
     opacity: 0.5;
     z-index: -2; 
 }
