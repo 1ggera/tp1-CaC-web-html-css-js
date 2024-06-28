@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/1ggera/tp1-CaC-web-html-css-js#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mysql2": "^3.10.1"
   }
 }

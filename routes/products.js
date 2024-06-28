@@ -1,6 +1,10 @@
 //Archivo q maneja las rutas de los productos
 const express = require('express')
 const router = express.Router()
+const db_ = require('../db/db')
+const app = express();
+
+app.use(express.json())
 
 let products = [
   {
@@ -67,7 +71,14 @@ let products = [
 
 //1er endpoint
 router.get('/',(req, res)=>{
-  res.json(products)
+  // res.json(products)
+  const consulta_sql = "SELECT * FROM productos";
+  db_.query(consulta_sql, (err, results)=>{
+    if(err){
+      return res.status(500).send(err); 
+    }
+    res.send(results);
+  })
 })
 
 //2do endpoint
@@ -118,5 +129,18 @@ router.delete('/:id', (req, res) =>{
   res.json(deleteProduct) // cuando finaliza muestra la película eliminada
 })
 
+
+//
+app.post("/items", (req, res) => {
+  const { nombre, descripcion } = req.body;
+  const sql = "INSERT INTO items (nombre, descripcion) VALUES (?,?)";
+  db_.query(sql_, [nombre, descripcion], (err, result) => { // los campos completos
+    if (err) {
+      return res.status(500).send(err);
+    }
+    res.status(201).send({ id: result.insertId, nombre, descripcion }); //todos los campos de la bd
+  });
+});
+//
 
 module.exports = router
