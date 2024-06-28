@@ -1,21 +1,19 @@
-const mysql = require('mysql2')
+const mysql = require("mysql2");
 
 const conexion = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
-  database: "kioscubeapp"
-})
+  database: "tecnifull",
+});
 
-conexion.connect((err)=>{
-  if(err){
-    
+conexion.connect((err) => {
+  if (err) {
     console.log("Falló la conexión", err);
 
-    return 
+    return;
   }
   console.log("Conexión exitosa!");
+});
 
-})
-
-module.exports=conexion;
+module.exports = conexion;
