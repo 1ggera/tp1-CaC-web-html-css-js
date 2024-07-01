@@ -94,37 +94,24 @@ router.put("/:id", (req, res) => {
       return res.status(500).send("error al seleccionar ", err);
     }
     if (result.affectedRows > 0)
-      res.status(201).send("Modificado correctamente");
-    else res.status(200).send("Producto sin encontrar");
-    //    nombre_producto,precio_producto,descripcion_producto,id_categoria,
+      res.status(200).send("Modificado correctamente");
+    else res.status(404).send("Producto sin encontrar");
   });
 });
 
 //5to ENDPOINT
 //DELETE
 router.delete("/:id", (req, res) => {
-  // parsea el id q le ingresamos y lo busca en el listado
-  const productIndex = products.findIndex(
-    (prod) => prod.id === parseInt(req.params.id)
-  );
-  if (productIndex == -1) return res.status(404).send("Producto no encontrado");
-
-  const deleteProduct = products.splice(productIndex, 1);
-
-  res.json(deleteProduct); // cuando finaliza muestra la película eliminada
-});
-
-/**
-app.post("/items", (req, res) => {
-  const { nombre, descripcion } = req.body;
-  const sql = "INSERT INTO items (nombre, descripcion) VALUES (?,?)";
-  db.query(sql_, [nombre, descripcion], (err, result) => { // los campos completos
-    if (err) {
-      return res.status(500).send(err);
+  const { id } = req.params;
+  sql = "DELETE FROM productos WHERE id_producto = ?";
+  db.query(sql, [id], (err, result) => {
+    if (err) res.status(500).send(err);
+    if (result.affectedRows > 0) {
+      res.status(200).send("Eliminado correctamente");
+    } else {
+      res.status(404).send("No se encontró el producto");
     }
-    res.status(201).send({ id: result.insertId, nombre, descripcion }); //todos los campos de la bd
   });
 });
-*/
 
 module.exports = router;
