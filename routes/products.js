@@ -80,7 +80,7 @@ router.put("/:id", (req, res) => {
                 precio_producto = ?,
                 descripcion_producto = ?,
                 id_categoria = ?
-         WHERE id_producto = ?`;
+                WHERE id_producto = ?`;
   const values = [
     nombre_producto,
     precio_producto,
