@@ -2,7 +2,6 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-// const clienteRoutes = require('./routes/clienteRoutes');
 const clienteRoutes = require('./apiv2/routes/clienteRoutes')
 const pedidoRoutes = require('./apiv2/routes/pedidoRoutes');
 const productoRoutes = require('./apiv2/routes/productoRoutes');
