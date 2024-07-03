@@ -37,7 +37,8 @@ const getPedidoById = (req, res) => {
 const createPedido = (req, res) => {
     const { id_cliente, estado_pedido, metodo_pago, monto_final } = req.body;
     db.query(
-        "INSERT INTO pedidos (id_cliente, estado_pedido, metodo_pago, monto_final) VALUES (?, ?, ?, ?)",
+        `INSERT INTO pedidos (id_cliente, estado_pedido, metodo_pago, monto_final) VALUES (?, ?, ?, ?);
+        `,
         [id_cliente, estado_pedido, JSON.stringify(metodo_pago), monto_final],
         (err, result) => {
             if (!err) {
