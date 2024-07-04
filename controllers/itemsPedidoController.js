@@ -15,6 +15,7 @@ const getAllItemsPedido = (req, res) => {
 // Obtener todos los items de un pedido por ID de pedido
 const getItemsPedidoByPedidoId = (req, res) => {
     const { id_pedido } = req.params;
+    console.log(id_pedido)
     db.query(
         "SELECT * FROM items_pedidos WHERE id_pedido = ?",
         [id_pedido],

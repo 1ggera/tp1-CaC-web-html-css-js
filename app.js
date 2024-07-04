@@ -2,11 +2,11 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const clienteRoutes = require('./apiv2/routes/clienteRoutes')
-const pedidoRoutes = require('./apiv2/routes/pedidoRoutes');
-const productoRoutes = require('./apiv2/routes/productoRoutes');
-const usuarioRoutes = require('./apiv2/routes/usuarioRoutes');
-const itemsPedidosRoutes = require('./apiv2/routes/itemsPedidosRoutes');
+const clienteRoutes = require('./routes/clienteRoutes')
+const pedidoRoutes = require('./routes/pedidoRoutes');
+const productoRoutes = require('./routes/productoRoutes');
+const usuarioRoutes = require('./routes/usuarioRoutes');
+const itemsPedidosRoutes = require('./routes/itemsPedidosRoutes');
 const app = express();
 
 // Middleware para parsear bodies JSON
