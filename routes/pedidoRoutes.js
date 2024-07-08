@@ -12,7 +12,7 @@ router.get('/', getAllPedidos);
 router.get('/:id', getPedidoById);
 router.post('/', createPedido);
 router.put('/', updatePedido);
-router.delete('/', deletePedido);
+router.delete('/:id', deletePedido);
 
 
 module.exports = router;
